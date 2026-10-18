@@ -20,16 +20,6 @@ import {
   X,
 } from "lucide-react";
 import {
-  useCallback,
-  useEffect,
-  useRef,
-  useState,
-  type PointerEvent as ReactPointerEvent,
-} from "react";
-import { Button } from "@/components/ui/button";
-import { GitHubStars } from "@/components/github-stars";
-import { WallpaperAppLink } from "@/components/wallpaper-app-link";
-import {
   Drawer,
   DrawerClose,
   DrawerContent,
@@ -101,8 +91,6 @@ const emptyStats: SceneStats = {
 };
 
 const AMBIENT_IDLE_DELAY_MS = 2400;
-const GITHUB_REPOSITORY = "budife/mizukoi";
-const WALLPAPER_APP_URL = "https://mizukoi.budd.my.id/";
 
 // Restores v2 (or migrates v1) localStorage settings into the store before
 // the first render, and wires up debounced+pagehide saving from then on.
@@ -646,9 +634,6 @@ export function App() {
             </header>
 
             <div className="top-actions">
-              <GitHubStars repo={GITHUB_REPOSITORY} stargazersCount={2} />
-              <Separator orientation="vertical" />
-              <WallpaperAppLink href={WALLPAPER_APP_URL} />
               <Separator orientation="vertical" />
               <Drawer
                 open={settingsOpen}
