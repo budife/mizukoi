@@ -352,23 +352,7 @@ input[type="color"] {
   background: var(--accent);
 }
 
-.github-stars {
-  gap: 0.38rem;
-  padding-inline: 0.48rem;
-}
 
-.wallpaper-link {
-  gap: 0.38rem;
-  padding-inline: 0.55rem;
-  border-radius: 0.62rem;
-}
-
-.github-stars__count {
-  color: var(--muted-foreground);
-  font-family: var(--font-mono);
-  font-size: 0.68rem;
-  font-variant-numeric: tabular-nums;
-}
 
 .control-shortcut {
   height: 1.15rem;
@@ -1105,9 +1089,7 @@ input[type="color"] {
     display: none;
   }
 
-  .wallpaper-link {
-    height: 2rem;
-  }
+  
 
   .control-dock {
     position: static;
@@ -1183,10 +1165,7 @@ input[type="color"] {
     display: inline;
   }
 
-  .top-actions .github-stars {
-    width: auto;
-    min-width: 2.9rem;
-  }
+  
 
   .settings-drawer {
     --drawer-content-width: auto;
@@ -1253,23 +1232,15 @@ input[type="color"] {
     flex-shrink: 0;
   }
 
-  .github-stars__count {
-    display: none;
-  }
+  
 
   .top-actions {
     gap: 0;
   }
 
-  .github-stars {
-    padding-inline: 0.4rem;
-  }
+  
 
-  .wallpaper-link {
-    gap: 0.3rem;
-    padding-inline: 0.3rem;
-    font-size: 0.8rem;
-  }
+  
 }
 
 @media (prefers-reduced-motion: reduce) {
