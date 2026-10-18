@@ -5,6 +5,8 @@ import {
   useState,
   type PointerEvent as ReactPointerEvent,
 } from "react";
+import { ComingSoon } from "./components/coming-soon";
+import { PixelArtAnimation } from "./components/pixel-art-animation";
 import { Button } from "@/components/ui/button";
 import {
   Cloud,
@@ -174,6 +176,7 @@ export function App() {
   const [ambientMode, setAmbientMode] = useState(false);
   const [ambientControlsVisible, setAmbientControlsVisible] = useState(true);
   const [settingsOpen, setSettingsOpen] = useState(false);
+  const [isComingSoon, setIsComingSoon] = useState(true);
   const [weatherMenuOpen, setWeatherMenuOpen] = useState(false);
   const [frameRateMenuOpen, setFrameRateMenuOpen] = useState(false);
   const [performancePrefs, setPerformancePrefs] =
@@ -603,7 +606,7 @@ export function App() {
   const ambientUiHidden =
     ambientMode && !ambientControlsVisible && !ambientUiHeldOpen;
 
-  return (
+  return isComingSoon ? <ComingSoon /> : (
     <main
       ref={stageRef}
       className={`stage${ambientMode ? " stage--ambient" : ""}${
