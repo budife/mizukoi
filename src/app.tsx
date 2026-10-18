@@ -101,8 +101,8 @@ const emptyStats: SceneStats = {
 };
 
 const AMBIENT_IDLE_DELAY_MS = 2400;
-const GITHUB_REPOSITORY = "msk1039/procedural-koi-threejs";
-const WALLPAPER_APP_URL = "https://nagomi.m4yank.com/";
+const GITHUB_REPOSITORY = "budife/mizukoi";
+const WALLPAPER_APP_URL = "https://mizukoi.budd.my.id/";
 
 // Restores v2 (or migrates v1) localStorage settings into the store before
 // the first render, and wires up debounced+pagehide saving from then on.
@@ -642,7 +642,7 @@ export function App() {
             }`}
           >
             <header className="brand-float">
-              <h1 className="brand-wordmark">nagomi</h1>
+              <h1 className="brand-wordmark">Mizukoi</h1>
             </header>
 
             <div className="top-actions">

@@ -37,7 +37,7 @@ describe("persistence", () => {
 
   it("drops unknown saved paths instead of throwing", () => {
     localStorage.setItem(
-      "nagomi:pond-settings:v2",
+      "mizukoi:pond-settings:v2",
       JSON.stringify({
         version: 2,
         overrides: { "koi.depth.shadow.offset.x": 4.4, "koi.initialCount": 10 },
@@ -52,7 +52,7 @@ describe("persistence", () => {
 
   it("fills the duckweed rippleResponse defaults when saved data predates it", () => {
     localStorage.setItem(
-      "nagomi:pond-settings:v2",
+      "mizukoi:pond-settings:v2",
       JSON.stringify({
         version: 2,
         overrides: { "duckweed.driftX": 7 },
@@ -82,7 +82,7 @@ describe("persistence", () => {
     // A removed field from the old shape (FISH.depth.shadow.offset) — must be ignored, not throw.
     v1Config.koi.depth = { ...v1Config.koi.depth, shadow: { offset: { x: 4.4, y: 10.4 } } };
     localStorage.setItem(
-      "nagomi:pond-settings:v1",
+      "mizukoi:pond-settings:v1",
       JSON.stringify({ version: 1, config: v1Config, weather: "sunset", rain: true }),
     );
 

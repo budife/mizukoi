@@ -28,7 +28,7 @@ export const FRAME_RATE_OPTIONS: readonly FrameRateOption[] = [
 
 export const DEFAULT_FRAME_RATE: FrameRateCap = "60";
 export const AMBIENT_FRAME_RATE: FrameRateCap = "30";
-export const PERFORMANCE_STORAGE_KEY = "nagomi:performance:v1";
+export const PERFORMANCE_STORAGE_KEY = "mizukoi:performance:v1";
 
 export function defaultPerformancePrefs(): PerformancePrefs {
   return { version: 1, frameRate: DEFAULT_FRAME_RATE, explicit: false };

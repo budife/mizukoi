@@ -1,6 +1,6 @@
-# nagomi
+# Mizukoi
 
-Nagomi is an interactive, procedurally animated koi pond that runs in your browser. The fish
+Mizukoi is an interactive, procedurally animated koi pond that runs in your browser — forked from [msk1039/nagomi](https://github.com/msk1039/nagomi). The fish
 swim on their own, change depth, react to nearby fish, and gather around the
 water when you click or tap. Ripples, currents, lotus leaves, changing weather,
 and optional river sounds help the pond feel alive.
