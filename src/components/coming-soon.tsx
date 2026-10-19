@@ -3,6 +3,7 @@ import { Settings } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Switch } from "@/components/ui/switch";
 import { Drawer, DrawerTrigger, DrawerContent, DrawerHeader, DrawerTitle } from "@/components/ui/drawer";
+import { PixelArtAnimation } from "@/components/pixel-art-animation";
 
 export function ComingSoon() {
   const [isComingSoon, setIsComingSoon] = useState(true);
@@ -65,10 +66,8 @@ export function ComingSoon() {
 
       {/* Settings Drawer */}
       <Drawer open={settingsOpen} onOpenChange={setSettingsOpen} modal={false}>
-        <DrawerTrigger>
-          <Button variant="ghost" aria-label="Open settings">
-            <Settings />
-          </Button>
+        <DrawerTrigger className="coming-soon__settings-btn" aria-label="Open settings">
+          <Settings />
         </DrawerTrigger>
         <DrawerContent className="settings-drawer">
           <DrawerHeader>

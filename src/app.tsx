@@ -176,7 +176,7 @@ export function App() {
   const [ambientMode, setAmbientMode] = useState(false);
   const [ambientControlsVisible, setAmbientControlsVisible] = useState(true);
   const [settingsOpen, setSettingsOpen] = useState(false);
-  const [isComingSoon, setIsComingSoon] = useState(true);
+  const [isComingSoon] = useState(false);
   const [weatherMenuOpen, setWeatherMenuOpen] = useState(false);
   const [frameRateMenuOpen, setFrameRateMenuOpen] = useState(false);
   const [performancePrefs, setPerformancePrefs] =
